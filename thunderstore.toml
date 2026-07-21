@@ -1,0 +1,36 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "Sparroh"
+name = "HeavyBugfix"
+description = "Fixes the Heavy upgrade fire-rate roll range flipping between different brackets depending on equip/stack context."
+websiteUrl = "https://github.com/Little-Sparroh/HeavyBugfix"
+containsNsfwContent = false
+
+[package.dependencies]
+BepInEx-BepInExPack_Mycopunk = "5.4.2403"
+
+[build]
+icon = "icon.png"
+readme = "README.md"
+outdir = "build"
+
+[[build.copy]]
+source = "bin/Release/net48/HeavyBugfix.dll"
+target = "BepInEx/plugins/HeavyBugfix.dll"
+
+[[build.copy]]
+source = "CHANGELOG.md"
+target = "CHANGELOG.md"
+
+[[build.copy]]
+source = "LICENSE"
+target = "LICENSE"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = [ "mycopunk" ]
+
+[publish.categories]
+mycopunk = [ "client", "mods" ]
