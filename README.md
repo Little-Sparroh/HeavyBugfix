@@ -1,4 +1,4 @@
-# Heavy Bugfix
+# HeavyBugfix
 
 Fixes a vanilla Mycopunk bug where the **Heavy** upgrade's fire-rate roll range
 changes depending on equip/stack context, confusing players comparing copies.
@@ -12,10 +12,10 @@ many Heavies are already equipped (`GetAppliedCount`), then runs it through
 
 On a weapon with `fireInterval = 0.3` and Heavy's range `0.38–0.45`, that yields:
 
-| Context | Displayed range |
-|---------|-----------------|
+| Context                            | Displayed range       |
+|------------------------------------|-----------------------|
 | No Heavy equipped yet / first copy | `[-33.33% - -21.05%]` |
-| Another Heavy already equipped | `[-60% - -55.88%]` |
+| Another Heavy already equipped     | `[-60% - -55.88%]`    |
 
 The rolled value is still seed-based; only the **bracket text** was lying.
 
@@ -30,8 +30,8 @@ Combat application (`Apply`) is unchanged — stacking still works as designed.
 
 ## Dependencies
 
-* Mycopunk
-* [BepInEx](https://github.com/BepInEx/BepInEx) 5.4.2403+ (Mycopunk pack)
+- Mycopunk
+- [BepInEx](https://github.com/BepInEx/BepInEx) 5.4.2403+ (Mycopunk pack)
 
 ## Install
 

@@ -17,7 +17,7 @@ readme = "README.md"
 outdir = "build"
 
 [[build.copy]]
-source = "bin/Release/net48/HeavyBugfix.dll"
+source = "bin/Release/netstandard2.1/HeavyBugfix.dll"
 target = "BepInEx/plugins/HeavyBugfix.dll"
 
 [[build.copy]]
@@ -30,7 +30,7 @@ target = "LICENSE"
 
 [publish]
 repository = "https://thunderstore.io"
-communities = [ "mycopunk" ]
+communities = ["mycopunk"]
 
 [publish.categories]
-mycopunk = [ "client", "mods" ]
+mycopunk = ["client", "mods"]
